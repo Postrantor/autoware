@@ -1,16 +1,17 @@
 ---
 tip: translate by baidu@2024-10-23 16:22:16
+date: 2024-10-24 09:06:41
 ---
 
 # Open AD Kit: containerized workloads for Autoware
 
 [Open AD Kit](https://autoware.org/open-ad-kit/) offers containers for Autoware to simplify the development and deployment of Autoware and its dependencies. This directory contains scripts to build and run the containers.
 
-> [打开 AD 工具包](https://autoware.org/open-ad-kit/)为 Autoware 提供容器，以简化 Autoware 及其依赖项的开发和部署。此目录包含用于构建和运行容器的脚本。
+> [打开 AD 工具包]为 Autoware 提供容器，以简化 Autoware 及其依赖项的开发和部署。此目录包含用于构建和运行容器的脚本。
 
 Detailed instructions on how to use the containers can be found in the [Open AD Kit documentation](https://autowarefoundation.github.io/autoware-documentation/main/installation/autoware/docker-installation/).
 
-> 有关如何使用容器的详细说明，请参阅[Open AD Kit 文档](https://autowarefoundation.github.io/autoware-documentation/main/installation/autoware/docker-installation/).
+> 有关如何使用容器的详细说明，请参阅[Open AD Kit 文档].
 
 ## Development containers
 
@@ -36,7 +37,7 @@ $ ros2 run --prefix "gdb -ex run --args" autoware_YYY ZZZ
 
 For example, if you want to make modifications to [`autoware.universe/perception/autoware_bytetrack`](https://github.com/autowarefoundation/autoware.universe/tree/main/perception/autoware_bytetrack), you can execute the following commands to perform the volume mount and debug build and execution of only the `autoware_bytetrack`.
 
-> 例如，如果你想修改[`autoware.universe/perception/autoware_bytetrack`](https://github.com/autowarefoundation/autoware.universe/tree/main/perception/autoware_bytetrack)，您可以执行以下命令来执行卷装载和调试构建，并仅执行`autoware_bytetrack`。
+> 例如，如果你想修改[`autoware.universe/perception/autoware_bytetrack`]，您可以执行以下命令来执行卷装载和调试构建，并仅执行`autoware_bytetrack`。
 
 Note that `gdb` is not currently installed in the development containers, but it would be installed in the near future.
 
@@ -95,7 +96,7 @@ ros2 launch autoware_pointcloud_preprocessor preprocessor.launch.xml
 
 The suffix `-devel` (e.g. `universe-devel`) is intended for use as a [development container](https://containers.dev). On the other hand, those without the `-devel` suffix (e.g. `universe`) are intended to be used as a runtime container.
 
-> 后缀`-devel`(例如`universe-devel`)旨在用作[开发容器](https://containers.dev). 另一方面，那些没有`-devel`后缀的(例如`universe`)旨在用作运行时容器。
+> 后缀`-devel`(例如`universe-devel`)旨在用作[开发容器]. 另一方面，那些没有`-devel`后缀的(例如`universe`)旨在用作运行时容器。
 
 ### `$BASE_IMAGE`
 
